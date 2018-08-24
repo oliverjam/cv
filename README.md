@@ -1,12 +1,20 @@
 <div class="grid">
   <header class="header">
-      <h1>Oliver Phillips</h1>
-      <span>op@oliverjam.es</span>
+  <div>
+    <h1>Oliver Phillips</h1>
+    <span>op@oliverjam.es</span>
+  </div>
+  <span>cv.oliverjam.es <svg width="16" height="16">
+            <use xlink:href="#external"></use>
+          </svg></span>
   </header>
   <aside class="about">
     <section class="section" id="about">
       <h2>Bio</h2>
-      <p class="card card--large">I'm a fullstack developer who loves everything about the web as a platform. I'm passionate about performance, accessibility and user-experience. I enjoy coffee and shaving bytes off my SVGs. My current focus is progressive web apps - creating mobile-first applications that feel native.</p>
+      <div class="card card--large">
+      <p>I'm a fullstack developer who loves everything about the web as a platform. I'm passionate about performance, accessibility and user-experience. I enjoy coffee and shaving bytes off my SVGs.</p>
+      <p>Teaching is one of my favourite things—I wrote and delivered a week long introduction to React for the most recent two Founders & Coders cohorts, and will be going back to teach it again soon.
+      </div>
     </section>
   </aside>
   <aside class="projects">
@@ -14,14 +22,14 @@
       <h2>Recent Projects</h2>
       <ul class="projects-grid">
         <li class="card">
-          <h3>Bookmarkd</h3>
-          <p>A offline-first React PWA for reading free ebooks on-the-go.</p>
-          <a href="https://bookmarkd-app.surge.sh/">bookmarkd-app.surge.sh</a>
+          <h3>Shitty Vegan</h3>
+          <p>A web app for tracking how many animal products you're eating each day. Built with React & Emotion.</p>
+          <a href="https://shittyvegan.com">shittyvegan.com</a>
         </li>
         <li class="card">
-          <h3>Jokes App</h3>
-          <p>A Hapi/Postgres app allowing users to log in via Github and post jokes.</p>
-          <a href="https://lol-jokes.herokuapp.com/">lol-jokes.herokuapp.com</a>
+          <h3>Restraint</h3>
+          <p>An open-source library to simplify using native HTML5 validation with React.</p>
+          <a href="https://github.com/oliverjam/restraint">github.com/oliverjam/restraint</a>
         </li>
       </ul>
     </section>
@@ -29,6 +37,24 @@
   <main class="main">
     <section class="section" id="experience">
       <h2>Experience</h2>
+      <dl class="card">
+        <dt class="u-visually-hidden">Company:</dt>
+          <dd class="h3">Ticketmaster</dd>
+        <dt class="u-visually-hidden">Role:</dt>
+          <dd class="h4">Frontend Engineer</dd>
+        <dt class="u-visually-hidden">Period:</dt>
+          <dd class="card__date">
+            <time datetime="2017-02-18">Sep 17</time>
+            -
+            <time datetime="2018-08-18">Present</time>
+          </dd>
+        <dt class="u-visually-hidden">Details:</dt>
+        <dd class="card__details">
+          <p>I spent the last year building the new checkout for customers buying resale tickets on ticketmaster.co.uk. It's a server-rendered React app with a GraphQL backend, heavily relying on Flow for type-checking.
+          <p>I was involved in every part of the UI, from UX and accessibility to integration and end-to-end testing. We also built a shared library of themeable components with another team for use across the company.</p>
+          <p>We worked as a scrum team, with frequent story refining, sprint planning and retros.</p>
+        </dd>
+      </dl>
       <dl class="card">
         <dt class="u-visually-hidden">Company:</dt>
           <dd class="h3">Ticketmaster</dd>
@@ -42,12 +68,11 @@
           </dd>
         <dt class="u-visually-hidden">Details:</dt>
         <dd class="card__details">
-          <p>I'm currently working on the Seatwave platform, building a component-based UI library and a server-rendered React app.</p>
-            <p>My main focus within the team is on the UI—I'm spending time ensuring the components we build are reusable, accessible and testable.</p>
-            <p>We're using Flow to make our code safer, which is something I'm enjoying the benefits of, and testing everything with Jest and Enzyme.</p>
+          <p>I was an intern for 3 months, working on the resale platform, building a component-based UI library and a server-rendered React app.</p>
+          <p>I was mostly focused on the UI—ensuring the components we built were reusable, accessible and testable.</p>
         </dd>
       </dl>
-      <dl class="card">
+      <dl class="card print-break">
         <dt class="u-visually-hidden">Company:</dt>
           <dd class="h3">Founders & Coders</dd>
         <dt class="u-visually-hidden">Role:</dt>
@@ -60,8 +85,8 @@
           </dd>
         <dt class="u-visually-hidden">Details:</dt>
         <dd class="card__details">
-          <p>I spent 16 weeks studying fullstack JavaScript development at Founders & Coders. This was a life-changing experience for me, reinforcing my love for web development and teaching others.</p>
-            <p>The course involved pair-programming almost all the time, with around half of each week spent in teams working on projects. We worked extensively with git and Github, learnt JS fundamendals rather than frameworks, practised agile design sprints, and had a strong emphasis on testing our code. I also spent a week teaching the next cohort test-driven development methodologies.</p>
+          <p>This was a 16 week fullstack JavaScript development bootcamp. It was a life-changing experience for me, reinforcing my love for web development and teaching others.</p>
+          <p>The course involved pair-programming almost all the time, with around half of each week spent in teams working on projects. We worked extensively with git and Github, learnt JS fundamendals rather than frameworks, practised agile design sprints, and had a strong emphasis on testing our code. I also spent a week teaching the next cohort test-driven development</p>
         </dd>
       </dl>
       <dl class="card">
@@ -77,103 +102,12 @@
           </dd>
         <dt class="u-visually-hidden">Details:</dt>
         <dd>
-          <p>I joined Lick as part of a new initiative to educate the creative teams on new technologies that could offer something more to our clients. I managed technology campaigns, communicating directly with clients and travelled abroad to project manage digital installations. My team successfully ran everything from one-off experiential events to technology-driven marketing campaigns.</p>
-          <p>I was also responsible for maintaining the website and company blog, which is how I fell in love with coding. After teaching myself HTML & CSS in my spare time (including rebuilding the Lick website from scratch), I eventually decided to move on and pursue programming as a full-time career.</p>
+          <p>I joined Lick as part of a new initiative to educate the creative teams on new technologies. I managed technology campaigns, communicating directly with clients and travelled abroad to project manage digital installations. My team successfully ran everything from one-off experiential events to technology-driven marketing campaigns.</p>
+          <p>I was also responsible for maintaining the website, which is how I fell in love with coding. After teaching myself HTML & CSS in my spare time, I decided to move on and pursue a career in development.</p>
         </dd>
       </dl>
     </section>
   </main>
-  <aside class="sidebar">
-    <section class="section" id="technologies">
-      <h2>Technologies</h2>
-      <ul class="tech">
-        <li class="tech__item">
-          <svg class="icon">
-            <use fill="#E34F26" xlink:href="sprite.svg#html5"></use>
-          </svg>
-          <span>HTML</span>
-        </li>
-        <li class="tech__item">
-          <svg class="icon">
-            <use fill="#1572B6" xlink:href="sprite.svg#css3"></use>
-          </svg>
-          <span>CSS</span>
-        </li>
-        <li class="tech__item">
-          <svg class="icon">
-            <use fill="#F7DF1E" xlink:href="sprite.svg#javascript"></use>
-          </svg>
-          <span>JavaScript</span>
-        </li>
-        <li class="tech__item">
-          <svg class="icon">
-            <use fill="#CC6699" xlink:href="sprite.svg#sass"></use>
-          </svg>
-          <span>Sass</span>
-        </li>
-        <li class="tech__item">
-          <svg class="icon">
-            <use  fill="#339933" xlink:href="sprite.svg#nodejs"></use>
-          </svg>
-          <span>Node</span>
-        </li>
-        <li class="tech__item">
-          <svg class="icon">
-            <use xlink:href="sprite.svg#postgre"></use>
-          </svg>
-          <span>PostgreSQL</span>
-        </li>
-        <li class="tech__item">
-          <svg class="icon">
-            <use fill="#F14E32" xlink:href="sprite.svg#git"></use>
-          </svg>
-          <span>Git</span>
-        </li>
-        <li class="tech__item">
-          <svg class="icon">
-            <use fill="#39A85B" xlink:href="sprite.svg#travisci"></use>
-          </svg>
-          <span>Travis CI</span>
-        </li>
-          <li class="tech__item">
-          <svg class="icon">
-            <use fill="#DA4648" xlink:href="sprite.svg#gulp"></use>
-          </svg>
-          <span>Gulp</span>
-        </li>
-        <li class="tech__item">
-          <svg class="icon">
-            <use xlink:href="sprite.svg#webpack"></use>
-          </svg>
-          <span>Webpack</span>
-        </li>
-        <li class="tech__item">
-          <svg class="icon">
-            <use xlink:href="sprite.svg#babel"></use>
-          </svg>
-          <span>Babel</span>
-        </li>
-        <li class="tech__item">
-          <svg class="icon">
-            <use fill="#00D8FF" xlink:href="sprite.svg#react"></use>
-          </svg>
-          <span>React</span>
-        </li>
-        <li class="tech__item">
-          <svg class="icon">
-            <use fill="#764ABC" xlink:href="sprite.svg#redux"></use>
-          </svg>
-          <span>Redux</span>
-        </li>
-        <li class="tech__item">
-          <div class="icon">
-            <span>💅</span>
-          </div>
-          <span>Styled Components</span>
-        </li>
-      </ul>
-    </section>
-  </aside>
   <section class="education section">
     <h2>Education</h2>
     <div class="schools-grid">
@@ -221,13 +155,68 @@
         <dd>Including English & Maths</dd>
       </dl>
     </div>
+    <aside class="sidebar">
+    <section class="section" id="technologies">
+      <h2>Technologies</h2>
+      <ul class="tech">
+        <li class="tech__item">
+          <svg class="icon">
+            <use fill="#E34F26" xlink:href="#html5"></use>
+          </svg>
+          <span>HTML</span>
+        </li>
+        <li class="tech__item">
+          <svg class="icon">
+            <use fill="#1572B6" xlink:href="#css3"></use>
+          </svg>
+          <span>CSS</span>
+        </li>
+        <li class="tech__item">
+          <svg class="icon">
+            <use fill="#F7DF1E" xlink:href="#javascript"></use>
+          </svg>
+          <span>JavaScript</span>
+        </li>
+        <li class="tech__item">
+          <svg class="icon">
+            <use fill="#F14E32" xlink:href="#git"></use>
+          </svg>
+          <span>Git</span>
+        </li>
+        <li class="tech__item">
+          <svg class="icon">
+            <use xlink:href="#babel"></use>
+          </svg>
+          <span>Babel</span>
+        </li>
+        <li class="tech__item">
+          <svg class="icon">
+            <use fill="#00D8FF" xlink:href="#react"></use>
+          </svg>
+          <span>React</span>
+        </li>
+        <li class="tech__item">
+          <svg class="icon">
+            <use fill="#764ABC" xlink:href="#redux"></use>
+          </svg>
+          <span>Redux</span>
+        </li>
+        <li class="tech__item">
+          <div class="icon">
+            <span>💅</span>
+          </div>
+          <span>Styled Components</span>
+        </li>
+      </ul>
+    </section>
+  </aside>
   </section>
-  <footer class="footer">
+  <!-- <footer class="footer">
     <ul class="footer__list">
       <li>
         <a class="footer__link" href="https://twitter.com/oliverjam">
           <svg class="icon icon--bottom">
-            <use fill="#181717" xlink:href="sprite.svg#github"></use>
+            <use fill="#181717" xlink:href="#github"></use>
           </svg>
           <span>Github</span>
         </a>
@@ -235,7 +224,7 @@
       <li>
         <a class="footer__link" href="https://codepen.io/oliverjam">
           <svg class="icon icon--bottom">
-            <use fill="#000000" xlink:href="sprite.svg#codepen"></use>
+            <use fill="#000000" xlink:href="#codepen"></use>
           </svg>
           <span>Codepen</span>
         </a>
@@ -243,7 +232,7 @@
       <li>
         <a class="footer__link" href="https://twitter.com/_oliverjam">
           <svg class="icon icon--bottom">
-            <use fill="#1DA1F2" xlink:href="sprite.svg#twitter"></use>
+            <use fill="#1DA1F2" xlink:href="#twitter"></use>
           </svg>
           <span>Twitter</span>
         </a>
@@ -251,11 +240,11 @@
       <li>
         <a class="footer__link" href="https://www.linkedin.com/in/oliverjam/">
           <svg class="icon icon--bottom">
-            <use fill="#0077B5" xlink:href="sprite.svg#linkedin"></use>
+            <use fill="#0077B5" xlink:href="#linkedin"></use>
           </svg>
           <span>LinkedIn</span>
         </a>
       </li>
     </ul>
-  </footer>
+  </footer> -->
 </div>

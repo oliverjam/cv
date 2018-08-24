@@ -1,5 +1,6 @@
 module.exports = ({
   title = 'Oliver Phillips CV',
+  sprite,
   styles,
   html,
 }) => `<!DOCTYPE html>
@@ -12,6 +13,7 @@ module.exports = ({
     <style>${styles}</style>
   </head>
   <body>
+    ${sprite}
     ${html}
   </body>
 </html>

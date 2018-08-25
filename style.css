@@ -265,33 +265,18 @@ h4 {
   width: 1px;
   white-space: nowrap;
 }
-/* @media print {
+
+.print-only {
+  display: none;
+}
+
+@media print {
   a {
     color: inherit;
     text-decoration: none;
   }
-  .grid {
-    display: block;
-    max-width: 100%;
-  }
-  .projects-grid {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-  }
-  .projects-grid > * + * {
-    margin-top: 0;
-    margin-left: 0.5em;
-  }
-  .schools-grid {
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: 1fr 1fr 1fr;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 1em;
-  }
-  .schools-grid > * {
-    margin-top: 0;
+  .print-only {
+    display: initial;
   }
   .sidebar {
     display: none;
@@ -302,10 +287,4 @@ h4 {
   .footer__link::after {
     content: attr(href);
   }
-} */
-.footer__link span {
-  display: none;
-}
-.footer__link::after {
-  content: attr(href);
 }

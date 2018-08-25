@@ -4,16 +4,17 @@
     <h1>Oliver Phillips</h1>
     <span>op@oliverjam.es</span>
   </div>
-  <span>cv.oliverjam.es <svg width="16" height="16">
-            <use xlink:href="#external"></use>
-          </svg></span>
+  <a href="https://cv.oliverjam.es" class="print-only">
+    <span>cv.oliverjam.es <svg width="16" height="16"><use xlink:href="#external"></use></svg>
+    </span>
+  </a>
   </header>
   <aside class="about">
     <section class="section" id="about">
       <h2>Bio</h2>
       <div class="card card--large">
       <p>I'm a fullstack developer who loves everything about the web as a platform. I'm passionate about performance, accessibility and user-experience. I enjoy coffee and shaving bytes off my SVGs.</p>
-      <p>Teaching is one of my favourite things—I wrote and delivered a week long introduction to React for the most recent two Founders & Coders cohorts, and will be going back to teach it again soon.
+      <p>Teaching is one of my favourite things—I wrote and delivered a week long <a href="https://github.com/oliverjam/intro-react-workshop">introduction to React</a> and <a href="https://github.com/oliverjam/learn-react-testing">React testing</a> for the most recent two Founders & Coders cohorts, and will be going back to teach it again soon.
       </div>
     </section>
   </aside>
@@ -211,7 +212,7 @@
     </section>
   </aside>
   </section>
-  <!-- <footer class="footer">
+  <footer class="footer">
     <ul class="footer__list">
       <li>
         <a class="footer__link" href="https://twitter.com/oliverjam">
@@ -246,5 +247,5 @@
         </a>
       </li>
     </ul>
-  </footer> -->
+  </footer>
 </div>

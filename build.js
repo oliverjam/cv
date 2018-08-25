@@ -49,5 +49,5 @@ const build = async () => {
 };
 
 build();
-watch('./README.md', build);
-watch('./style.css', build);
+// watch('./README.md', build);
+// watch('./style.css', build);

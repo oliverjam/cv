@@ -215,7 +215,7 @@
   <footer class="footer">
     <ul class="footer__list">
       <li>
-        <a class="footer__link" href="https://twitter.com/oliverjam">
+        <a class="footer__link" href="https://github.com/oliverjam">
           <svg class="icon icon--bottom">
             <use fill="#181717" xlink:href="#github"></use>
           </svg>

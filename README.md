@@ -86,7 +86,7 @@
         <dt class="u-visually-hidden">Details:</dt>
         <dd class="card__details">
           <p>This was a 16 week fullstack JavaScript development bootcamp. It was a life-changing experience for me, reinforcing my love for web development and teaching others.</p>
-          <p>The course involved pair-programming almost all the time, with around half of each week spent in teams working on projects. We worked extensively with git and Github, learnt JS fundamendals rather than frameworks, practised agile design sprints, and did lots of testing. I also spent a week teaching the next cohort test-driven development</p>
+          <p>The course involved pair-programming almost all the time, with around half of each week spent in teams working on projects. We worked extensively with git and Github, learnt JS fundamentals rather than frameworks, practised agile design sprints, and did lots of testing. I also spent a week teaching the next cohort test-driven development</p>
         </dd>
       </dl>
       <dl class="card">
@@ -172,10 +172,7 @@
         <dd>Including English & Maths</dd>
       </dl>
     </div>
-    <aside class="sidebar">
-  </aside>
-  </section>
-  <footer class="footer">
+    <footer class="footer">
     <ul class="footer__list">
       <li>
         <a class="footer__link" href="https://github.com/oliverjam">
@@ -211,4 +208,5 @@
       </li>
     </ul>
   </footer>
+  </section>
 </div>

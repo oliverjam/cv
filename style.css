@@ -32,12 +32,14 @@ body {
 }
 h1,
 h2,
+.h2,
 h3 {
   margin: 0;
   line-height: 1;
 }
 h1 {
   font-size: 2.369em;
+  font-weight: 900;
 }
 .h2,
 h2 {
@@ -78,7 +80,7 @@ h4 {
       -ms-grid-rows: 5em auto auto auto auto 5em;
       grid-template-rows: 5em auto auto auto auto 5em;
       grid-gap: 1.5em;
-      grid-template-areas: "header header header header header header" "about about about about about about" "main main main main education education" "sidebar sidebar sidebar sidebar sidebar sidebar" "footer footer footer footer footer footer";
+      grid-template-areas: "header header header header header header" "about about about about about about" "main main main main education education";
     }
     .grid > * + * {
       margin-top: 0;
@@ -88,14 +90,8 @@ h4 {
 .about {
   grid-area: about;
 }
-.projects {
-  grid-area: projects;
-}
 .main {
   grid-area: main;
-}
-.sidebar {
-  grid-area: sidebar;
 }
 .education {
   grid-area: education;
@@ -142,18 +138,8 @@ h1::after {
   margin-bottom: 0.25em;
 }
 .projects-grid > * + * {
-  margin-top: 0.5em;
+  margin-top: 1em;
 }
-// @media (min-width: 40em) {
-//   .projects-grid {
-//     display: grid;
-//     grid-template-columns: 1fr 1fr;
-//     grid-gap: 1.5em;
-//   }
-//   .projects-grid > * + * {
-//     margin-top: 0;
-//   }
-// }
 .card {
   position: relative;
   padding: 1.25em;
@@ -205,32 +191,6 @@ h1::after {
 .schools-grid > * + * {
   margin-top: 1em;
 }
-/* @supports ((display: -ms-grid) or (display: grid)) {
-  @media (min-width: 45em) {
-    .schools-grid {
-      display: -ms-grid;
-      display: grid;
-      -ms-grid-columns: 1fr 1fr 1fr;
-      grid-template-columns: 1fr 1fr 1fr;
-      grid-gap: 1em;
-    }
-    .schools-grid > * {
-      margin-top: 0;
-    }
-  }
-} */
-.footer {
-  grid-area: footer;
-  display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-.footer__link,
-.footer__list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-}
 .footer__list {
   width: 100%;
   font-size: 0.8em;
@@ -281,6 +241,7 @@ h1::after {
 
 @media print {
   body {
+    padding-top: 3.75rem;
     font-size: 0.875rem;
     background-color: #fff;
   }
@@ -294,11 +255,19 @@ h1::after {
   .sidebar {
     display: none;
   }
+  .footer__list {
+    display: block;
+  }
+  .footer__link {
+    margin-top: 0.75rem;
+    flex-direction: row;
+  }
   .footer__link span {
     display: none;
   }
   .footer__link::after {
     content: attr(href);
+    margin-left: 0.5rem;
   }
   .card {
     background-color: #fff;

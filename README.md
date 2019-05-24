@@ -17,23 +17,6 @@
       </div>
     </section>
   </aside>
-  <aside class="projects">
-    <section class="section" id="projects">
-      <h2>Recent Projects</h2>
-      <ul class="projects-grid">
-      <li class="card">
-          <h3>Imbibe</h3>
-          <p>An app to tell you what drinks you can make. Built using all the cool new React stuff—suspense, hooks and lazy loading.</p>
-          <a href="https://github.com/oliverjam/restraint">github.com/oliverjam/restraint</a>
-        </li>
-        <li class="card">
-          <h3>Shitty Vegan</h3>
-          <p>A web app for tracking how many animal products you're eating each day. Built with React & Emotion.</p>
-          <a href="https://shittyvegan.com">shittyvegan.com</a>
-        </li>
-      </ul>
-    </section>
-  </aside>
   <main class="main">
     <section class="section" id="experience">
       <h2>Experience</h2>
@@ -126,6 +109,23 @@
     </section>
   </main>
   <section class="education section">
+  <aside class="projects">
+    <section class="section" id="projects">
+      <h2>Recent Projects</h2>
+      <ul class="projects-grid">
+      <li class="card">
+          <h3>Imbibe</h3>
+          <p>An app to tell you what drinks you can make. Built using all the cool new React stuff—suspense, hooks and lazy loading.</p>
+          <a href="https://github.com/oliverjam/restraint">github.com/oliverjam/restraint</a>
+        </li>
+        <li class="card">
+          <h3>Shitty Vegan</h3>
+          <p>A web app for tracking how many animal products you're eating each day. Built with React & Emotion.</p>
+          <a href="https://shittyvegan.com">shittyvegan.com</a>
+        </li>
+      </ul>
+    </section>
+  </aside>
     <h2>Education</h2>
     <div class="schools-grid">
       <dl class="card">

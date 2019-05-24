@@ -20,7 +20,7 @@ a {
   text-decoration: none;
 }
 body {
-  padding: 1rem 0;
+  padding: 2em 0;
   color: #333c4d;
   background-color: #f7f4f3;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
@@ -62,7 +62,7 @@ h4 {
   margin-bottom: 0.5em;
 }
 .grid {
-  padding: 1em;
+  padding: 1.25em;
 }
 .grid > * + * {
   margin-top: 1.5em;
@@ -83,7 +83,7 @@ h4 {
       -ms-grid-rows: 5em auto auto auto auto 5em;
       grid-template-rows: 5em auto auto auto auto 5em;
       grid-gap: 1.5em;
-      grid-template-areas: "header header header header header header" "about about about about about about" "projects projects projects projects projects projects" "main main main main education education" "sidebar sidebar sidebar sidebar sidebar sidebar" "footer footer footer footer footer footer";
+      grid-template-areas: "header header header header header header" "about about about about about about" "main main main main education education" "sidebar sidebar sidebar sidebar sidebar sidebar" "footer footer footer footer footer footer";
     }
     .grid > * + * {
       margin-top: 0;
@@ -149,16 +149,16 @@ h1::after {
 .projects-grid > * + * {
   margin-top: 0.5em;
 }
-@media (min-width: 40em) {
-  .projects-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 1.5em;
-  }
-  .projects-grid > * + * {
-    margin-top: 0;
-  }
-}
+// @media (min-width: 40em) {
+//   .projects-grid {
+//     display: grid;
+//     grid-template-columns: 1fr 1fr;
+//     grid-gap: 1.5em;
+//   }
+//   .projects-grid > * + * {
+//     margin-top: 0;
+//   }
+// }
 .card {
   position: relative;
   padding: 1.25em;
@@ -287,6 +287,7 @@ h1::after {
 @media print {
   body {
     font-size: 0.875rem;
+    background-color: #fff;
   }
   a {
     color: inherit;
@@ -303,5 +304,9 @@ h1::after {
   }
   .footer__link::after {
     content: attr(href);
+  }
+  .card {
+    background-color: #fff;
+    box-shadow: none;
   }
 }

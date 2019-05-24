@@ -173,59 +173,6 @@
       </dl>
     </div>
     <aside class="sidebar">
-    <section class="section" id="technologies">
-      <h2>Technologies</h2>
-      <ul class="tech">
-        <li class="tech__item">
-          <svg class="icon">
-            <use fill="#E34F26" xlink:href="#html5"></use>
-          </svg>
-          <span>HTML</span>
-        </li>
-        <li class="tech__item">
-          <svg class="icon">
-            <use fill="#1572B6" xlink:href="#css3"></use>
-          </svg>
-          <span>CSS</span>
-        </li>
-        <li class="tech__item">
-          <svg class="icon">
-            <use fill="#F7DF1E" xlink:href="#javascript"></use>
-          </svg>
-          <span>JavaScript</span>
-        </li>
-        <li class="tech__item">
-          <svg class="icon">
-            <use fill="#F14E32" xlink:href="#git"></use>
-          </svg>
-          <span>Git</span>
-        </li>
-        <li class="tech__item">
-          <svg class="icon">
-            <use xlink:href="#babel"></use>
-          </svg>
-          <span>Babel</span>
-        </li>
-        <li class="tech__item">
-          <svg class="icon">
-            <use fill="#00D8FF" xlink:href="#react"></use>
-          </svg>
-          <span>React</span>
-        </li>
-        <li class="tech__item">
-          <svg class="icon">
-            <use fill="#764ABC" xlink:href="#redux"></use>
-          </svg>
-          <span>Redux</span>
-        </li>
-        <li class="tech__item">
-          <div class="icon">
-            <span>💅</span>
-          </div>
-          <span>Styled Components</span>
-        </li>
-      </ul>
-    </section>
   </aside>
   </section>
   <footer class="footer">

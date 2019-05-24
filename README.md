@@ -2,7 +2,7 @@
   <header class="header">
   <div>
     <h1>Oliver Phillips</h1>
-    <span>op@oliverjam.es</span>
+    <span>oliverjamesphillips@gmail.com</span>
   </div>
   <a href="https://cv.oliverjam.es" class="print-only">
     <span>cv.oliverjam.es <svg width="16" height="16"><use xlink:href="#external"></use></svg>
@@ -12,9 +12,8 @@
   <aside class="about">
     <section class="section" id="about">
       <h2>Bio</h2>
-      <div class="card card--large">
-      <p>I'm a fullstack developer who loves everything about the web as a platform. I'm passionate about performance, accessibility and user-experience. I enjoy coffee and shaving bytes off my SVGs.</p>
-      <p>Teaching is one of my favourite things—I wrote and delivered a week long <a href="https://github.com/oliverjam/intro-react-workshop">introduction to React</a> and <a href="https://github.com/oliverjam/learn-react-testing">React testing</a> for the most recent two Founders & Coders cohorts, and will be going back to teach it again soon.
+      <div class="card">
+      <p>I'm a fullstack developer who loves everything about the web. I'm passionate about performance, accessibility and user-experience. I enjoy coffee and shaving bytes off my SVGs. Teaching is one of my favourite things—I mentor a week long <a href="https://github.com/oliverjam/learn-react">introduction to React</a> and <a href="https://github.com/oliverjam/learn-react-testing">React testing</a> for each new Founders & Coders cohorts.
       </div>
     </section>
   </aside>
@@ -22,15 +21,15 @@
     <section class="section" id="projects">
       <h2>Recent Projects</h2>
       <ul class="projects-grid">
+      <li class="card">
+          <h3>Imbibe</h3>
+          <p>An app to tell you what drinks you can make. Built using all the cool new React stuff—suspense, hooks and lazy loading.</p>
+          <a href="https://github.com/oliverjam/restraint">github.com/oliverjam/restraint</a>
+        </li>
         <li class="card">
           <h3>Shitty Vegan</h3>
           <p>A web app for tracking how many animal products you're eating each day. Built with React & Emotion.</p>
           <a href="https://shittyvegan.com">shittyvegan.com</a>
-        </li>
-        <li class="card">
-          <h3>Restraint</h3>
-          <p>An open-source library to simplify using native HTML5 validation with React.</p>
-          <a href="https://github.com/oliverjam/restraint">github.com/oliverjam/restraint</a>
         </li>
       </ul>
     </section>
@@ -42,35 +41,52 @@
         <dt class="u-visually-hidden">Company:</dt>
           <dd class="h3">Ticketmaster</dd>
         <dt class="u-visually-hidden">Role:</dt>
-          <dd class="h4">Frontend Engineer</dd>
+          <dd class="h4">Frontend Engineer III</dd>
         <dt class="u-visually-hidden">Period:</dt>
           <dd class="card__date">
-            <time datetime="2017-02-18">Sep 17</time>
+            <time datetime="2017-02-18">Mar 19</time>
             -
             <time datetime="2018-08-18">Present</time>
           </dd>
         <dt class="u-visually-hidden">Details:</dt>
         <dd class="card__details">
-          <p>I spent the last year building the new checkout for customers buying resale tickets on ticketmaster.co.uk. It's a server-rendered React app with a GraphQL backend, heavily relying on Flow for type-checking.
-          <p>I was involved in every part of the UI, from UX and accessibility to integration and end-to-end testing. We also built a shared library of themeable components with another team for use across the company.</p>
-          <p>We worked as a scrum team, with frequent story refining, sprint planning and retros.</p>
+          <p>Most recently I've been working on a library of reusable React components to be shared across Ticketmaster. I focused on building a comprehensive suite of accessible and user-friendly UI components that cover the majority of UI patterns I saw across the site. They're designed to have solid defaults with extensible APIs so developers don't feel like they have to start from scratch all the time. They also help us enforce design consistency across our products.</p>
         </dd>
       </dl>
       <dl class="card">
         <dt class="u-visually-hidden">Company:</dt>
           <dd class="h3">Ticketmaster</dd>
         <dt class="u-visually-hidden">Role:</dt>
-          <dd class="h4">Frontend Engineering Intern</dd>
+          <dd class="h4">Frontend Engineer II</dd>
+        <dt class="u-visually-hidden">Period:</dt>
+          <dd class="card__date">
+            <time datetime="2017-02-18">Jun 18</time>
+            -
+            <time datetime="2018-08-18">Mar 19</time>
+          </dd>
+        <dt class="u-visually-hidden">Details:</dt>
+        <dd class="card__details">
+          <p>I moved into the ticketmaster.co.uk team to help build the new resale platform, which is now live for all of the UK & Ireland, and about to roll out across Europe.</p>
+          <p>We used primarily React, Redux, Reach Router and Styled Components. I was responsible for a lot of the UI development, as well as figuring out complex business logic to integrate several different legacy backends and bridge the gap between Ticketmaster events and Seatwave's resale database.</p>
+          <p>I also built a Node server to coordinate the many internal services involved. This had a very robust logging setup as the complex architecture meant we needed to do lots of tracking and debugging.</p>
+        </dd>
+      </dl>
+      <dl class="card">
+        <dt class="u-visually-hidden">Company:</dt>
+          <dd class="h3">Ticketmaster</dd>
+        <dt class="u-visually-hidden">Role:</dt>
+          <dd class="h4">Frontend Engineer I</dd>
         <dt class="u-visually-hidden">Period:</dt>
           <dd class="card__date">
             <time datetime="2017-02-18">Jul 17</time>
             -
-            <time datetime="2017-06-18">Sep 17</time>
+            <time datetime="2018-08-18">Jun 18</time>
           </dd>
         <dt class="u-visually-hidden">Details:</dt>
         <dd class="card__details">
-          <p>I was an intern for 3 months, working on the resale platform, building a component-based UI library and a server-rendered React app.</p>
-          <p>I was mostly focused on the UI—ensuring the components we built were reusable, accessible and testable.</p>
+          <p>My team built the new checkout for customers buying resale tickets on ticketmaster.co.uk. It's a server-rendered React app with a GraphQL backend, relying on Flow for type-checking. We started out with Next.js but ended up rolling our own server-rendering solution for better control.</p>
+          <p>As this was a greenfield project I was able to focus on performance, user-experience and accessibility. We progressively enhanced the site to work without JS, and I created a robust suite of tests with React Testing Library and Cypress.</p>
+          <!-- <p>We operated as a product team separate from the wider business, following pretty strict Scrum, with frequent story refining, sprint planning and retros. This helped us iterate quickly and meant we had strong ownership of the product we were building.</p> -->
         </dd>
       </dl>
       <dl class="card print-break">
@@ -87,7 +103,7 @@
         <dt class="u-visually-hidden">Details:</dt>
         <dd class="card__details">
           <p>This was a 16 week fullstack JavaScript development bootcamp. It was a life-changing experience for me, reinforcing my love for web development and teaching others.</p>
-          <p>The course involved pair-programming almost all the time, with around half of each week spent in teams working on projects. We worked extensively with git and Github, learnt JS fundamendals rather than frameworks, practised agile design sprints, and had a strong emphasis on testing our code. I also spent a week teaching the next cohort test-driven development</p>
+          <p>The course involved pair-programming almost all the time, with around half of each week spent in teams working on projects. We worked extensively with git and Github, learnt JS fundamendals rather than frameworks, practised agile design sprints, and did lots of testing. I also spent a week teaching the next cohort test-driven development</p>
         </dd>
       </dl>
       <dl class="card">
@@ -104,7 +120,7 @@
         <dt class="u-visually-hidden">Details:</dt>
         <dd>
           <p>I joined Lick as part of a new initiative to educate the creative teams on new technologies. I managed technology campaigns, communicating directly with clients and travelled abroad to project manage digital installations. My team successfully ran everything from one-off experiential events to technology-driven marketing campaigns.</p>
-          <p>I was also responsible for maintaining the website, which is how I fell in love with coding. After teaching myself HTML & CSS in my spare time, I decided to move on and pursue a career in development.</p>
+          <p>I was responsible for maintaining the website, which is how I fell in love with coding. After teaching myself HTML & CSS, I decided to and pursue a career in development.</p>
         </dd>
       </dl>
     </section>

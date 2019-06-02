@@ -85,7 +85,7 @@
           </dd>
         <dt class="u-visually-hidden">Details:</dt>
         <dd class="card__details">
-          <p>This was a 16 week fullstack JavaScript development bootcamp. It was a life-changing experience for me, reinforcing my love for web development and teaching others.</p>
+          <p>Founders & Coders is a free 16 week fullstack JavaScript development bootcamp. It was a life-changing experience for me, reinforcing my love for web development and teaching others.</p>
           <p>The course involved pair-programming almost all the time, with around half of each week spent in teams working on projects. We worked extensively with git and Github, learnt JS fundamentals rather than frameworks, practised agile design sprints, and did lots of testing. I also spent a week teaching the next cohort test-driven development</p>
         </dd>
       </dl>
@@ -116,12 +116,12 @@
       <li class="card">
           <h3>Imbibe</h3>
           <p>An app to tell you what drinks you can make. Built using all the cool new React stuff—suspense, hooks and lazy loading.</p>
-          <a href="https://github.com/oliverjam/restraint">github.com/oliverjam/restraint</a>
+          <a href="https://github.com/oliverjam/imbibe">github.com/oliverjam/imbibe</a>
         </li>
         <li class="card">
           <h3>Shitty Vegan</h3>
           <p>A web app for tracking how many animal products you're eating each day. Built with React & Emotion.</p>
-          <a href="https://shittyvegan.com">shittyvegan.com</a>
+          <a href="https://github.com/oliverjam/shitty-vegan">github.com/oliverjam/shitty-vegan</a>
         </li>
       </ul>
     </section>
